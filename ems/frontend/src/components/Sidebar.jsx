@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Users, UserPlus, Settings, Command, LogOut } from 'lucide-react';
+import { LayoutDashboard, Users, UserPlus, Settings, Hexagon, LogOut } from 'lucide-react';
 
 const Sidebar = () => {
   return (
@@ -11,7 +11,7 @@ const Sidebar = () => {
           borderRadius: '12px', padding: '0.5rem', display: 'flex', color: 'white',
           boxShadow: '0 4px 15px var(--primary-glow)'
         }}>
-          <Command size={24} />
+          <Hexagon size={24} />
         </div>
         <span>EMS</span>
       </div>
