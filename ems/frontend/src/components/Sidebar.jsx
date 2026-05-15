@@ -1,19 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Users, UserPlus, Settings, Hexagon, LogOut } from 'lucide-react';
+import { LayoutDashboard, Users, UserPlus, Settings, Layers, LogOut } from 'lucide-react';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="logo" style={{ marginBottom: '1rem' }}>
+      <div className="logo" style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
         <div style={{ 
           background: 'linear-gradient(135deg, var(--primary), var(--secondary))', 
           borderRadius: '12px', padding: '0.5rem', display: 'flex', color: 'white',
           boxShadow: '0 4px 15px var(--primary-glow)'
         }}>
-          <Hexagon size={24} />
+          <Layers size={24} />
         </div>
-        <span>EMS</span>
+        <span style={{ fontSize: '1.75rem', fontWeight: 800, color: 'white', letterSpacing: '1px' }}>EMS</span>
       </div>
       
       <div className="nav-links" style={{ flex: 1 }}>
